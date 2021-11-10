@@ -1,5 +1,7 @@
 package Aula10;
 
+// Mesa 7 - Jehan Lucas Vieira, Mateus Benites Dias, Rafael Nobre, Renan de Andrade
+
 public class PrincipalMesa {
     public static void main(String[] args){
         Nave nave1 = new Nave(10, 10, 'N', 20);
