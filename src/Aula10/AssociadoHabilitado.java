@@ -9,6 +9,10 @@ public class AssociadoHabilitado extends Associado {
         this.custoPiscina = custoPiscina;
     }
 
+    public void setHabilitado(boolean habilitado) {
+        this.habilitado = habilitado;
+    }
+
     @Override
     public double custoMensal() {
         if (this.habilitado) {

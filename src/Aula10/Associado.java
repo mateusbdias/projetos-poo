@@ -16,4 +16,14 @@ public class Associado {
     public double custoMensal(){
         return this.valorMensal;
     }
+
+    @Override
+    public String toString() {
+        return "Associado{" +
+                "numAssociado='" + numAssociado + '\'' +
+                ", nome='" + nome + '\'' +
+                ", valorMensal=" + valorMensal +
+                ", atividade='" + atividade + '\'' +
+                '}';
+    }
 }
