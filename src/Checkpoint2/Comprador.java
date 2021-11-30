@@ -50,8 +50,8 @@ public class Comprador extends Usuario {
     public String toString() {
         return "Username: " + getUsername() + "\nNome: " + getNome() +
                 "\nSobrenome: " + getSobrenome() + "\nEndereço: " +
-                getEndereco() + "\nCPF: " + getCpf() +
-                "\nData de Nascimento: " + getDataNascimento() +
+                getEndereco() + "\nCPF: " + cpf +
+                "\nData de Nascimento: " + dataNascimento +
                 "\nCartão: " + this.cartao.toString();
     }
 

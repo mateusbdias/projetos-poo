@@ -19,6 +19,13 @@ public class Vendedor extends Usuario {
         this.cnpj = cnpj;
     }
 
+    @Override
+    public String toString() {
+        return "Username: " + getUsername() + "\nNome: " + getNome() +
+                "\nSobrenome: " + getSobrenome() + "\nEndereço: " +
+                getEndereco() + "\nCNPJ: " + cnpj;
+    }
+
     public void cadastrarProduto(Produto produto){
         this.produtos.add(produto);
     }
