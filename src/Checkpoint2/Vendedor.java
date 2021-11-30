@@ -33,4 +33,11 @@ public class Vendedor extends Usuario {
     public void removerProduto(Produto produto){
         this.produtos.remove(produto);
     }
+
+    public void verProdutos(){
+        for (Produto produto: produtos) {
+            System.out.println(produto.toString("V")); // Mostra cada um dos produtos no estoque do vendedor
+            System.out.println("==========================");
+        }
+    }
 }

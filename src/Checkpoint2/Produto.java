@@ -67,6 +67,18 @@ public class Produto {
         this.qtd = qtd;
     }
 
+    public String toString(String tipoUsuario) {
+        if (tipoUsuario.equals("V")){ // Visualização do vendedor, com a quantidade de cada produto
+            return "Nome: " + nome + "\nPlataforma: " + plataforma + "\nPublisher: " + publisher + "\nData de Lançamento: " +
+                    dataLancamento + "\nPreço: " + preco + "\nQuantidade: " + qtd;
+        } else if (tipoUsuario.equals("C")){ // Como no carrinho os produtos iguais não são agrupados, não mostramos esse atributo
+            return "Nome: " + nome + "\nPlataforma: " + plataforma + "\nPublisher: " + publisher + "\nData de Lançamento: " +
+                    dataLancamento + "\nPreço: " + preco;
+        } else {
+            return null;
+        }
+    }
+
     public float aplicarDesconto(float desconto){
         return preco = preco * (1 - desconto);
     }

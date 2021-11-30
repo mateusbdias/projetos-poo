@@ -37,9 +37,10 @@ public class Cartao {
         this.dataValidade = dataValidade;
     }
 
+    // Facilita a visualização dos dados do cartão com o método getCartao() da classe Comprador
     @Override
     public String toString() {
         return "Número: " + numero + "\nCódigo de Seguranca: " + codSeguranca +
-                "\nData de Validade:" + dataValidade;
+                "\nData de Validade: " + dataValidade;
     }
 }

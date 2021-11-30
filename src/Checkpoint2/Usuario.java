@@ -7,6 +7,7 @@ public abstract class Usuario {
     private String sobrenome;
     private Endereco endereco;
 
+    // Construtor sem o endereço (há método específico para vinculação ao usuário)
     public Usuario(String username, String senha, String nome, String sobrenome) {
         this.username = username;
         this.senha = senha;
@@ -42,18 +43,17 @@ public abstract class Usuario {
         this.sobrenome = sobrenome;
     }
 
+    // O Getter referente ao endereço aproveita o Override do método toString na classe Endereco, mostrando os dados do atributo de uma forma mais organizada
     public String getEndereco() {
         return endereco.toString();
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
+    // Método utilizado para vincular o endereço ao usuário (substitui o respectivo Setter)
     public void vincularEndereco(Endereco endereco){
         this.endereco = endereco;
     }
 
+    // Método utilizado para alterar a senha do usuário (substitui o respectivo Setter)
     public void redefinirSenha(String novaSenha){
         this.senha = novaSenha;
     }

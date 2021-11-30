@@ -65,6 +65,7 @@ public class Endereco {
         this.estado = estado;
     }
 
+    // Facilita a visualização dos dados do endereço com o método getEndereco() da classe Usuario
     @Override
     public String toString() {
         return rua + ", " + numero + ", " + complemento + " - " + bairro +
